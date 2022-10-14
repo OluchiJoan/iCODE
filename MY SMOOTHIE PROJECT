@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>smoothie</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to top,
+          lightgrey 0%,
+          lightgrey 1%,
+          #e0e0e0 26%,
+          #efefef 48%,
+          #d9d9d9 75%,
+          #bcbcbc 100%
+        );
+      }
+      .learn {
+        display: block;
+        text-decoration: none;
+        margin-top: 6px;
+        color: #132743;
+        font-size: 18px;
+      }
+
+      .learn:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #c3195d;
+        color: #cfd9df;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #cfd9df;
+        color: #c3195d;
+      }
+      h1 {
+        text-align: center;
+        font-size: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #c3195d;
+      }
+      .second {
+        text-align: center;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #c3195d;
+        border: 1px solid #c3195d;
+        padding: 15px 20px;
+        border-radius: 10px;
+      }
+      .first {
+        display: block;
+        margin: 0 auto;
+        max-width: 97%;
+        border-radius: 10px;
+        width: 450px;
+      }
+      .define {
+        line-height: 1.5;
+        font-size: 20px;
+      }
+      .coder {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Smoothie:A blend of fruits🍐🍍🍎</h1>
+    <h2 class="second">A glass of smoothie is everything refreshing</h2>
+    <hr />
+    <img
+      class="first"
+      src=" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/361/original/shutterstock-1007971735-1616409752.jpg?1662223783"
+    />
+    <hr />
+    <p class="define">
+      A smoothie is a beverage made by puréeing ingredients in a blender. A
+      smoothie commonly has a liquid base, such as fruit juice or milk, yogurt,
+      ice cream or cottage cheese. Other ingredients may be added, including
+      fruits, vegetables, non-dairy milk, crushed ice, whey powder or
+      nutritional supplements. A daily smoothie can offer a super convenient way
+      to get your fruits and veggies in while also nourishing your body with
+      many essential vitamins and minerals. The key is to maximize those
+      benefits by focusing on whole, nutrient-dense foods while avoiding added
+      sugars as much as possible.
+    </p>
+    <br />
+    <a
+      href="https://en.wikipedia.org/wiki/Smoothie"
+      target="blank"
+      class="learn"
+    >
+      Learn more on wikipedia
+    </a>
+    <br />
+    <button>GET A GLASS OF SMOOTHIE</button>
+    <p class="coder">
+      👩‍💻Coded by
+      <span
+        ><a
+          href="https://www.shecodes.io/graduates/53967-oluchi-ukaigwe"
+          target="_blank"
+        >
+          Oluchi Ukaigwe
+        </a>
+      </span>
+    </p>
+    <script>
+      function drink() {
+        let name = prompt("What is your name?");
+        let email = prompt(" what is your email address?");
+        let fruit = prompt("what is your favorite fruit?");
+        let age = prompt("How old are you?");
+
+        if (age >= 16) {
+          alert(
+            " Hey 👋" +
+              name +
+              " your " +
+              fruit +
+              " smoothie🥤 will be ready soon,meanwhile check your email for details."
+          );
+        } else {
+          alert(
+            " Hey 👋" +
+              name +
+              " you need to tell an older person to get you a glass of smoothie🥤"
+          );
+        }
+      }
+      let smoothie = document.querySelector("button");
+      smoothie.addEventListener("click", drink);
+    </script>
+  </body>
+</html>
+
